@@ -1,0 +1,82 @@
+/* General container layout */
+/* General container layout */
+.last-container {
+    background-color: #C19434;
+    display: flex;
+    padding: 100px;
+    min-height: 70vh; /* A reasonable minimum height */
+    height: auto; /* Let the height adjust dynamically based on content */
+    align-items: center; /* Vertically center content */
+}
+
+/* Left section */
+.left {
+    flex: 1.5;
+    background-color: white;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-content {
+    max-width: 80%;
+}
+
+.left h2 {
+    font-size: 36px;
+    color: #4e5d2c;
+    margin-bottom: 20px;
+}
+
+.left p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #4e5d2c;
+    margin-bottom: 20px;
+}
+
+.left a {
+    font-size: 16px;
+    color: #4e5d2c;
+    text-decoration: none;
+    border-bottom: 1px solid #4e5d2c;
+}
+
+/* Right image section */
+.right {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two images per row */
+    grid-template-rows: repeat(2, 1fr);    /* Two rows of images */
+    gap: 0; /* No gap between images */
+    height: auto; /* Let height adjust naturally */
+}
+
+.right img {
+    width: 100%; /* Full width of the grid cell */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the grid cell without distorting the image */
+}
+
+
+
+
+
+
+<section class="last-container">
+            <div class="left">
+                <div>
+                    <h2>What We Do</h2>
+                    <p>Design Studio is an architectural and urban design practice with an international reputation for design quality, 
+                       for pioneering environmental expertise and a progressive architectural approach.</p>
+                    <a href="#">read more</a>
+                </div>
+            </div>
+            <div class="right">
+                <img src="https://images03.nicepage.com/c461c07a441a5d220e8feb1a/b6e81760880b5bd5921c9ae5/33dee2efdaae64632514e4942754b400.jpg" alt="Image 1">
+                <img src="https://images03.nicepage.com/c461c07a441a5d220e8feb1a/594bb6d5e63f5b67905f15c8/Untitled5.jpg" alt="Image 2">
+                <img src="https://images03.nicepage.com/c461c07a441a5d220e8feb1a/a15457353d0d52ed9542a0e1/d39717eb731b7ff9448aeffca445f15d.jpg" alt="Image 3">
+                <img src="https://images03.nicepage.com/c461c07a441a5d220e8feb1a/3c8a13c6cb3552f3adcb6eb5/8a209396-a5e6-d5fa-cdbb-6f3377184622.jpg" alt="Image 4">
+            </div>
+        </section>

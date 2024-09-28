@@ -1,0 +1,390 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: ubuntu, sans-serif;
+    background-color: #FFFFFF;
+}
+
+.first-section {
+    height: 100vh;
+    background-image: url(house.jpg);
+    background-position: center;
+    background-color: rgba(27, 23, 23, 0.5); 
+    background-blend-mode: darken; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 180px;
+}
+
+.first-section h1 {
+    color: white;
+    font-size: 100px;
+    text-align: right;
+}
+
+.first-para {
+    text-align: right;
+    color: white;
+    line-height: 1.9;
+    text-shadow: 10%;
+}
+
+.second-section {
+    padding: 150px;
+    padding-left: 300px;
+    background-color: #34421E;
+    height: 50vh;
+    display: flex;
+    flex: content;
+    gap: 10px;
+    max-width: 100%; 
+    overflow: hidden; 
+    align-items: center;
+}
+
+.two-img {
+    max-width: 30%; 
+    overflow: hidden;
+    gap: 0px; 
+    
+}
+
+.two-img img {
+    gap: 10px;
+    max-width: 100%; 
+    gap: 10px;
+    height: 250px; 
+    display: inline; 
+}
+
+.third-section{
+    padding-left: 250px;
+    padding-bottom: 180px;
+    padding-right: 250px;
+    padding-top: 50px;
+}
+
+.dream-house{
+    font-size: 40px;
+    text-align: center;
+    color: #6D8448;
+}
+
+.two-div{
+    display: flex;
+    flex: content;
+    height: 80vh;
+    margin-top: 40px;
+    padding: 40px;
+}
+
+.two-div img{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 800px;
+
+}
+
+
+.text-div{
+    padding: 30px;
+    padding-top: 50px;
+    color: #C19434;
+    background-color: #2E3329;
+
+}
+
+
+.text-div h1{
+    font-size: 60px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.text-div p{
+    text-align: left;
+    line-height: 2.0;
+    font-size: 20px;
+}
+
+
+.text-div-two{
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.text-div-two h1{
+    font-size: 40px;
+    color: #34421E;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.text-div-two p{
+    text-align: center;
+    line-height: 30px;
+}
+
+
+.fifth-section{
+    margin-top: 0;
+    padding-top: 0px;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-bottom: 250px;
+    height: 100vh;
+}
+
+.fifth-section h1{
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.two-div-2{
+    display: flex;
+    flex: content;
+    height: 80vh;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.two-div-2 img{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 800px;
+
+}
+
+
+
+
+@media (max-width: 600px) {
+    .first-section {
+        padding: 30px 15px;
+    }
+
+    .first-section h1 {
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    .first-para {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .second-section {
+        flex-direction: column;
+        padding: 20px 15px;
+        height: 100%;
+    }
+
+    .two-img {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .third-section {
+        padding: 15px;
+    }
+
+    .dream-house h1 {
+        font-size: 2em;
+    }
+
+    .two-div {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .two-div img {
+        width: 100%;
+        height: auto;
+    }
+
+    .text-div {
+        padding: 20px;
+    }
+
+    .text-div h1 {
+        font-size: 1.8em;
+        text-align: center;
+    }
+
+    .text-div p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .text-div-two {
+        padding: 10px;
+    }
+
+    .text-div-two h1 {
+        font-size: 1.8em;
+    }
+
+    .text-div-two p {
+        font-size: 14px;
+    }
+
+    .fifth-section {
+        padding: 20px 15px;
+        height: auto;
+    }
+
+    .fifth-section h1 {
+        font-size: 1.8em;
+    }
+
+    .two-div-2 {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .two-div-2 img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .first-section {
+        padding: 100px 20px;
+    }
+
+    .first-section h1 {
+        font-size: 3.5em;
+    }
+
+    .first-para {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .second-section {
+        flex-direction: row;
+        padding: 50px 20px;
+    }
+
+    .two-img {
+        flex: 1 1 45%;
+        margin-bottom: 15px;
+    }
+
+    .third-section {
+        padding: 50px 20px;
+    }
+
+    .dream-house h1 {
+        font-size: 2.5em;
+    }
+
+    .two-div {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .two-div img {
+        width: 100%;
+        height: auto;
+    }
+
+    .text-div {
+        padding: 30px;
+    }
+
+    .text-div h1 {
+        font-size: 2.2em;
+        text-align: center;
+    }
+
+    .text-div p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .text-div-two {
+        padding: 20px 50px;
+    }
+
+    .fifth-section {
+        padding: 40px 20px;
+    }
+
+    .fifth-section h1 {
+        font-size: 2em;
+    }
+
+    .two-div-2 {
+        flex-direction: row;
+    }
+
+    .two-div-2 img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 1025px) {
+    .first-section {
+        padding: 100px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .first-section h1 {
+        font-size: 80px;
+        max-width: 100%;
+        word-wrap: break-word;
+    }
+
+    .first-para p {
+        font-size: 18px;
+        max-width: 100%;
+        word-wrap: break-word;
+    }
+
+    .second-section {
+        padding: 50px 150px;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .third-section, .fifth-section {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .text-div {
+        padding: 50px;
+        max-width: 100%;
+    }
+
+    .text-div h1 {
+        font-size: 50px;
+    }
+
+    .text-div-two, .fifth-section h1 {
+        font-size: 30px;
+        word-wrap: break-word;
+    }
+
+    .two-div img, .two-div-2 img {
+        width: 100%;
+        height: auto;
+    }
+}
